@@ -217,7 +217,7 @@ export default function App() {
           </div>
 
           <footer className="h-8 flex items-center justify-center text-center text-xs opacity-70 px-4">
-            © {new Date().getFullYear()} Kevin Lee — kevinlee.haha
+            © {new Date().getFullYear()} Kevin Lee — kevinlee.lol
           </footer>
         </div>
       </motion.main>
