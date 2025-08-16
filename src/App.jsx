@@ -182,7 +182,7 @@ export default function App() {
                     My work ranges from full-stack development and distributed systems to applied ML, with a goal of making AGI more accessible, safe, and impactful for end users.
                   </p>
                   <p className="text-white/70 leading-relaxed">
-                    If I'm not doing anything serious, you’ll find me playing betting games, stargazing, or exploring new places—whether it’s a hidden café, a great hiking trail, or a spontaneous trip.
+                    When I'm not doing anything serious, you’ll find me playing betting games, playing racquet sports, stargazing, or exploring new places—whether it’s a hidden café, a great hiking trail, or a spontaneous trip.
                   </p>
                 </div>
                 <div className="mt-auto pt-6">
