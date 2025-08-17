@@ -94,8 +94,33 @@ function TopBar({ bgAlt, setBgAlt }) {
 export default function App() {
   const [dark, setDark] = useState(false)
   const [bgAlt, setBgAlt] = useState(false)
+  const [typedText, setTypedText] = useState('')
+  const fullHeader = "hey, i'm Kevin!"
+  const [typingDone, setTypingDone] = useState(false)
   useEffect(() => {
     setDark(window.matchMedia('(prefers-color-scheme: dark)').matches)
+  }, [])
+
+  // Header typing effect on mount
+  useEffect(() => {
+    let cancelled = false
+    let index = 0
+    const minDelay = 25
+    const maxDelay = 80
+
+    function typeNext() {
+      if (cancelled) return
+      if (index <= fullHeader.length) {
+        setTypedText(fullHeader.slice(0, index))
+        index += 1
+        const jitter = Math.random() * (maxDelay - minDelay) + minDelay
+        setTimeout(typeNext, jitter)
+      } else {
+        setTypingDone(true)
+      }
+    }
+    const kick = setTimeout(typeNext, 350)
+    return () => { cancelled = true; clearTimeout(kick) }
   }, [])
 
   // Parallax helper for ambient blobs
@@ -122,6 +147,7 @@ export default function App() {
         transition={{ duration: 0.3, ease: 'easeInOut' }}
         className={`h-screen overflow-hidden text-gray-100 bg-vibe ${bgAlt ? 'image2' : ''} dark:bg-vibe noise transition-colors duration-500`}
       >
+        <div aria-hidden className="aurora" />
         {/* Ambient blobs (fade with parent) */}
         <div aria-hidden className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
           <motion.div
@@ -149,9 +175,11 @@ export default function App() {
                 initial={{ scale: 0.98, filter: 'blur(8px)' }}
                 animate={{ scale: 1, filter: 'blur(0px)' }}
                 transition={{ delay: 0.6, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-                className="rounded-2xl overflow-hidden h-full"
+                className="rounded-2xl overflow-hidden h-full relative shadow-[0_12px_40px_rgba(0,0,0,0.35)]"
               >
                 <img src={portrait} alt="Portrait of Kevin Lee" className="w-full h-full object-cover rounded-2xl" />
+                <div aria-hidden className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/10" />
+                <div aria-hidden className="pointer-events-none absolute -top-20 left-1/2 -translate-x-1/2 w-[140%] h-40 bg-gradient-to-b from-white/20 to-transparent blur-3xl" />
               </motion.div>
             </TiltCard>
 
@@ -161,13 +189,30 @@ export default function App() {
                 initial={{ scale: 0.98, filter: 'blur(8px)' }}
                 animate={{ scale: 1, filter: 'blur(0px)' }}
                 transition={{ delay: 0.4, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-                className="relative overflow-hidden rounded-2xl border border-white/20 h-full flex flex-col bg-white/5 backdrop-blur-md shadow-[0_8px_30px_rgba(0,0,0,0.25)] p-5 lg:p-7"
+                className="relative overflow-hidden rounded-2xl h-full flex flex-col frosted-panel shadow-[0_8px_30px_rgba(0,0,0,0.25)] p-5 lg:p-7"
               >
                 {/* Decorative overlays */}
                 <div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/10" />
                 <div className="pointer-events-none absolute -top-28 -left-28 h-72 w-72 rounded-full bg-white/10 blur-3xl opacity-40" />
-                <div className="space-y-3 min-h-0 flex-1 overflow-auto pr-1">
-                  <h2 className="text-white font-semibold" style={{ fontSize: 'clamp(1.4rem, 2.5vw, 1.75rem)' }}>hey, i'm Kevin!</h2>
+                <div className="pointer-events-none absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
+                <div className="space-y-3 min-h-0 flex-1 overflow-auto pr-1 scroll-area">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <h2 className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-indigo-200 via-fuchsia-200 to-teal-200 drop-shadow-[0_1px_8px_rgba(99,102,241,0.25)]" style={{ fontSize: 'clamp(1.4rem, 2.5vw, 1.75rem)' }}>
+                      {typedText}
+                    </h2>
+                    {!typingDone && <span className="typing-caret" />}
+                    <motion.span
+                      role="img"
+                      aria-label="waving hand"
+                      className="inline-block select-none"
+                      initial={{ rotate: 0 }}
+                      animate={{ rotate: [0, 20, -8, 14, -4, 0] }}
+                      transition={{ duration: 1.6, repeat: Infinity, ease: [0.22, 1, 0.36, 1] }}
+                      style={{ transformOrigin: '70% 70%', fontSize: 'clamp(1.8rem, 3vw, 2.1rem)' }}
+                    >
+                      👋
+                    </motion.span>
+                  </div>
                   <p className="text-white/85 leading-relaxed">
                     I’m an engineer originally from New York, currently pursuing a BA in Computer Science + Applied Mathematics at UC Berkeley. My experience spans across industry and research, where I’ve:
                   </p>
@@ -191,11 +236,11 @@ export default function App() {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
-                    className="relative rounded-xl border border-white/20 bg-white/5 backdrop-blur-sm p-4 lg:p-5 shadow-[0_6px_20px_rgba(0,0,0,0.20)]"
+                    className="relative rounded-xl p-4 lg:p-5 shadow-[0_6px_20px_rgba(0,0,0,0.20)] frosted-panel glow-border"
                   >
                     <div className="flex items-center justify-between gap-4 flex-wrap">
                       <div>
-                        <div className="font-semibold" style={{ fontSize: 'clamp(1rem, 2vw, 1.125rem)' }}>want to connect?</div>
+                        <div className="font-semibold text-white" style={{ fontSize: 'clamp(1rem, 2vw, 1.125rem)' }}>want to connect?</div>
                         <div className="text-sm text-white/70">reach me here!</div>
                       </div>
                       <div className="flex items-center gap-3">
@@ -217,7 +262,7 @@ export default function App() {
           </div>
 
           <footer className="h-8 flex items-center justify-center text-center text-xs opacity-70 px-4">
-            © {new Date().getFullYear()} Kevin Lee — kevinlee.lol
+            © {new Date().getFullYear()} Kevin Lee — kevinlee.one
           </footer>
         </div>
       </motion.main>

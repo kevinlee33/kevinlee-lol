@@ -30,6 +30,7 @@ export default {
         float: 'float 6s ease-in-out infinite',
         drift: 'drift 14s ease-in-out infinite',
         noise: 'noise-shift 12s ease-in-out infinite',
+        pulseGlow: 'pulse 2.4s ease-in-out infinite',
       },
       boxShadow: {
         glow: '0 8px 30px rgba(255,255,255,0.08)'
