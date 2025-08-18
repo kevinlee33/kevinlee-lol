@@ -145,7 +145,7 @@ export default function App() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3, ease: 'easeInOut' }}
-        className={`h-screen overflow-hidden text-gray-100 bg-vibe ${bgAlt ? 'image2' : ''} dark:bg-vibe noise transition-colors duration-500`}
+        className={`min-h-screen overflow-x-hidden md:overflow-hidden text-gray-100 bg-vibe ${bgAlt ? 'image2' : ''} dark:bg-vibe noise transition-colors duration-500`}
       >
         <div aria-hidden className="aurora" />
         {/* Ambient blobs (fade with parent) */}
@@ -167,17 +167,17 @@ export default function App() {
         <div className="h-full flex flex-col">
           <TopBar bgAlt={bgAlt} setBgAlt={setBgAlt} />
 
-          {/* Canvas: subtract topbar (3.5rem) and footer (2rem) */}
-          <div className="min-h-0 h-[calc(100vh-3.5rem-2rem)] mx-auto max-w-6xl grid lg:grid-cols-[0.9fr,1.1fr] gap-6 p-4 lg:p-6 w-full">
+          {/* Canvas: on mobile let content flow; on md+ constrain to viewport minus header/footer */}
+          <div className="min-h-0 h-auto md:h-[calc(100vh-3.5rem-2rem)] mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-[0.9fr,1.1fr] gap-6 p-4 lg:p-6 w-full">
             {/* Left: Large portrait panel */}
             <TiltCard className="min-h-0">
               <motion.div
                 initial={{ scale: 0.98, filter: 'blur(8px)' }}
                 animate={{ scale: 1, filter: 'blur(0px)' }}
                 transition={{ delay: 0.6, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-                className="rounded-2xl overflow-hidden h-full relative shadow-[0_12px_40px_rgba(0,0,0,0.35)]"
+                className="rounded-2xl overflow-hidden h-auto md:h-full relative shadow-[0_12px_40px_rgba(0,0,0,0.35)]"
               >
-                <img src={portrait} alt="Portrait of Kevin Lee" className="w-full h-full object-cover rounded-2xl" />
+                <img src={portrait} alt="Portrait of Kevin Lee" className="w-full h-auto md:h-full object-cover rounded-2xl" />
                 <div aria-hidden className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/10" />
                 <div aria-hidden className="pointer-events-none absolute -top-20 left-1/2 -translate-x-1/2 w-[140%] h-40 bg-gradient-to-b from-white/20 to-transparent blur-3xl" />
               </motion.div>
@@ -189,13 +189,13 @@ export default function App() {
                 initial={{ scale: 0.98, filter: 'blur(8px)' }}
                 animate={{ scale: 1, filter: 'blur(0px)' }}
                 transition={{ delay: 0.4, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-                className="relative overflow-hidden rounded-2xl h-full flex flex-col frosted-panel shadow-[0_8px_30px_rgba(0,0,0,0.25)] p-5 lg:p-7"
+                className="relative overflow-hidden rounded-2xl h-auto md:h-full flex flex-col frosted-panel shadow-[0_8px_30px_rgba(0,0,0,0.25)] p-5 lg:p-7"
               >
                 {/* Decorative overlays */}
                 <div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/10" />
                 <div className="pointer-events-none absolute -top-28 -left-28 h-72 w-72 rounded-full bg-white/10 blur-3xl opacity-40" />
                 <div className="pointer-events-none absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
-                <div className="space-y-3 min-h-0 flex-1 overflow-auto pr-1 scroll-area">
+                <div className="space-y-3 min-h-0 flex-1 overflow-visible md:overflow-auto pr-0 md:pr-1 scroll-area">
                   <div className="flex items-center gap-2 flex-wrap">
                     <h2 className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-indigo-200 via-fuchsia-200 to-teal-200 drop-shadow-[0_1px_8px_rgba(99,102,241,0.25)]" style={{ fontSize: 'clamp(1.4rem, 2.5vw, 1.75rem)' }}>
                       {typedText}

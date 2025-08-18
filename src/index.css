@@ -8,10 +8,20 @@
   --bg-dark: #1b273d;
 }
 
-/* Full-viewport app without page scrollbars */
+/* Full-viewport app without page scrollbars on larger screens */
 html, body, #root {
   height: 100%;
   overflow: hidden;
+}
+/* On small screens, allow natural page scrolling */
+@media (max-width: 767px) {
+  html, body, #root {
+    height: auto;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 /* Subtle grain/noise + photo background */
