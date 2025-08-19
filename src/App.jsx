@@ -224,7 +224,7 @@ export default function App() {
                     <li>Evaluated and fine-tuned LLMs at <span className="font-semibold underline">Berkeley AI Research</span></li>
                   </ul>
                   <p className="text-white/80 leading-relaxed">
-                    My work ranges from full-stack development and distributed systems to applied ML, with a goal of making AGI more accessible, safe, and impactful for end users.
+                    My work ranges from full-stack development and distributed systems to applied ML.
                   </p>
                   <p className="text-white/70 leading-relaxed">
                     When I'm not doing anything serious, you’ll find me playing betting games, playing racquet sports, stargazing, or exploring new places—whether it’s a hidden café, a great hiking trail, or a spontaneous trip.
