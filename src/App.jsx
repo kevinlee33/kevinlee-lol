@@ -248,23 +248,45 @@ function NatureBackground() {
 
       {/* Sun with realistic glow layers - TOP LEFT */}
       <div className="absolute top-[3%] left-[8%]">
+        {/* Massive scene-wide aura */}
+        <motion.div
+          className="absolute"
+          style={{
+            width: '800px',
+            height: '800px',
+            top: '-300px',
+            left: '-300px',
+            background: 'radial-gradient(circle, rgba(255,220,150,0.4) 0%, rgba(255,200,100,0.2) 30%, rgba(255,180,80,0.1) 50%, transparent 70%)',
+          }}
+          animate={{ scale: [1, 1.15, 1], opacity: [0.7, 1, 0.7] }}
+          transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
+        />
         {/* Outer glow */}
         <motion.div
-          className="absolute -inset-20"
+          className="absolute -inset-32"
           style={{
-            background: 'radial-gradient(circle, rgba(255,200,100,0.3) 0%, rgba(255,180,80,0.1) 40%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(255,200,100,0.5) 0%, rgba(255,180,80,0.2) 40%, transparent 70%)',
           }}
-          animate={{ scale: [1, 1.1, 1], opacity: [0.6, 0.8, 0.6] }}
+          animate={{ scale: [1, 1.1, 1], opacity: [0.7, 0.9, 0.7] }}
           transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
         />
         {/* Mid glow */}
         <motion.div
-          className="absolute -inset-10"
+          className="absolute -inset-16"
           style={{
-            background: 'radial-gradient(circle, rgba(255,230,150,0.5) 0%, rgba(255,200,100,0.2) 50%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(255,230,150,0.6) 0%, rgba(255,200,100,0.3) 50%, transparent 70%)',
           }}
           animate={{ scale: [1, 1.05, 1] }}
           transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+        />
+        {/* Inner glow */}
+        <motion.div
+          className="absolute -inset-4"
+          style={{
+            background: 'radial-gradient(circle, rgba(255,250,200,0.8) 0%, rgba(255,230,150,0.4) 50%, transparent 70%)',
+          }}
+          animate={{ scale: [1, 1.08, 1] }}
+          transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
         />
         {/* Sun core */}
         <motion.div
@@ -274,16 +296,52 @@ function NatureBackground() {
             background: 'radial-gradient(circle, #fffef0 0%, #fff9c4 20%, #ffee58 40%, #ffca28 60%, #ff8f00 85%, transparent 100%)',
             borderRadius: '50%',
             filter: 'blur(1px)',
+            boxShadow: '0 0 60px 30px rgba(255,200,100,0.5), 0 0 100px 60px rgba(255,180,80,0.3)',
           }}
           animate={{ scale: [1, 1.03, 1] }}
           transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
         />
       </div>
 
-      {/* Subtle sun rays from top left */}
-      <div className="absolute top-0 left-0 w-[500px] h-[400px] opacity-20 pointer-events-none"
+      {/* Sun rays spreading across scene */}
+      <div className="absolute top-0 left-0 w-full h-[70%] pointer-events-none overflow-hidden">
+        <motion.div
+          className="absolute top-[3%] left-[8%]"
+          style={{
+            width: '150%',
+            height: '150%',
+            background: `
+              conic-gradient(
+                from 180deg,
+                transparent 0deg,
+                rgba(255,240,200,0.15) 10deg,
+                transparent 20deg,
+                transparent 30deg,
+                rgba(255,240,200,0.1) 40deg,
+                transparent 50deg,
+                transparent 65deg,
+                rgba(255,240,200,0.12) 75deg,
+                transparent 85deg,
+                transparent 100deg,
+                rgba(255,240,200,0.08) 110deg,
+                transparent 120deg,
+                transparent 140deg,
+                rgba(255,240,200,0.1) 150deg,
+                transparent 160deg,
+                transparent 180deg
+              )
+            `,
+            transformOrigin: 'top left',
+          }}
+          animate={{ opacity: [0.6, 0.9, 0.6], rotate: [0, 2, 0] }}
+          transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
+        />
+      </div>
+
+      {/* Ambient light wash from sun */}
+      <div className="absolute top-0 left-0 w-[60%] h-[60%] opacity-30 pointer-events-none"
         style={{
-          background: 'radial-gradient(ellipse at top left, rgba(255,240,200,0.5) 0%, transparent 60%)',
+          background: 'radial-gradient(ellipse at top left, rgba(255,240,200,0.6) 0%, rgba(255,220,150,0.3) 30%, transparent 60%)',
         }}
       />
 
@@ -1852,7 +1910,7 @@ function UnderwaterBackground() {
         transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
         style={{ transformOrigin: 'bottom center' }}
       >
-        <svg width="60" height="350" viewBox="0 0 60 350">
+        <svg width="60" height="500" viewBox="0 0 60 500">
           <defs>
             <linearGradient id="kelp1" x1="0%" y1="0%" x2="100%" y2="0%">
               <stop offset="0%" stopColor="#2d5a27" />
@@ -1860,14 +1918,14 @@ function UnderwaterBackground() {
               <stop offset="100%" stopColor="#2d5a27" />
             </linearGradient>
           </defs>
-          <path d="M30,350 Q25,300 35,250 Q25,200 35,150 Q28,100 32,50 Q30,25 35,0" fill="none" stroke="url(#kelp1)" strokeWidth="8" strokeLinecap="round" />
+          <path d="M30,500 Q25,430 35,360 Q25,290 35,220 Q28,150 32,80 Q30,40 35,0" fill="none" stroke="url(#kelp1)" strokeWidth="8" strokeLinecap="round" />
           {/* Kelp leaves */}
-          <ellipse cx="20" cy="280" rx="18" ry="8" fill="#4a8a44" transform="rotate(-20 20 280)" />
-          <ellipse cx="45" cy="240" rx="16" ry="7" fill="#4a8a44" transform="rotate(25 45 240)" />
-          <ellipse cx="18" cy="190" rx="15" ry="6" fill="#4a8a44" transform="rotate(-30 18 190)" />
-          <ellipse cx="48" cy="140" rx="14" ry="6" fill="#4a8a44" transform="rotate(20 48 140)" />
-          <ellipse cx="22" cy="90" rx="12" ry="5" fill="#4a8a44" transform="rotate(-25 22 90)" />
-          <ellipse cx="42" cy="50" rx="10" ry="4" fill="#4a8a44" transform="rotate(15 42 50)" />
+          <ellipse cx="20" cy="420" rx="18" ry="8" fill="#4a8a44" transform="rotate(-20 20 420)" />
+          <ellipse cx="45" cy="360" rx="16" ry="7" fill="#4a8a44" transform="rotate(25 45 360)" />
+          <ellipse cx="18" cy="290" rx="15" ry="6" fill="#4a8a44" transform="rotate(-30 18 290)" />
+          <ellipse cx="48" cy="220" rx="14" ry="6" fill="#4a8a44" transform="rotate(20 48 220)" />
+          <ellipse cx="22" cy="150" rx="12" ry="5" fill="#4a8a44" transform="rotate(-25 22 150)" />
+          <ellipse cx="42" cy="80" rx="10" ry="4" fill="#4a8a44" transform="rotate(15 42 80)" />
         </svg>
       </motion.div>
 
@@ -1878,12 +1936,12 @@ function UnderwaterBackground() {
         transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 0.5 }}
         style={{ transformOrigin: 'bottom center' }}
       >
-        <svg width="50" height="300" viewBox="0 0 50 300">
-          <path d="M25,300 Q30,250 22,200 Q30,150 25,100 Q28,50 25,0" fill="none" stroke="#3d7a37" strokeWidth="7" strokeLinecap="round" />
-          <ellipse cx="38" cy="240" rx="15" ry="6" fill="#5a9a54" transform="rotate(30 38 240)" />
-          <ellipse cx="12" cy="190" rx="14" ry="6" fill="#5a9a54" transform="rotate(-25 12 190)" />
-          <ellipse cx="40" cy="130" rx="12" ry="5" fill="#5a9a54" transform="rotate(20 40 130)" />
-          <ellipse cx="15" cy="70" rx="10" ry="4" fill="#5a9a54" transform="rotate(-20 15 70)" />
+        <svg width="50" height="450" viewBox="0 0 50 450">
+          <path d="M25,450 Q30,380 22,300 Q30,220 25,150 Q28,75 25,0" fill="none" stroke="#3d7a37" strokeWidth="7" strokeLinecap="round" />
+          <ellipse cx="38" cy="370" rx="15" ry="6" fill="#5a9a54" transform="rotate(30 38 370)" />
+          <ellipse cx="12" cy="290" rx="14" ry="6" fill="#5a9a54" transform="rotate(-25 12 290)" />
+          <ellipse cx="40" cy="200" rx="12" ry="5" fill="#5a9a54" transform="rotate(20 40 200)" />
+          <ellipse cx="15" cy="110" rx="10" ry="4" fill="#5a9a54" transform="rotate(-20 15 110)" />
         </svg>
       </motion.div>
 
@@ -1894,13 +1952,13 @@ function UnderwaterBackground() {
         transition={{ duration: 4.5, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
         style={{ transformOrigin: 'bottom center' }}
       >
-        <svg width="55" height="320" viewBox="0 0 55 320">
-          <path d="M28,320 Q22,270 32,220 Q25,170 30,120 Q27,70 30,20 Q28,0 30,0" fill="none" stroke="#3d7a37" strokeWidth="7" strokeLinecap="round" />
-          <ellipse cx="15" cy="260" rx="16" ry="7" fill="#4a8a44" transform="rotate(-25 15 260)" />
-          <ellipse cx="42" cy="210" rx="15" ry="6" fill="#4a8a44" transform="rotate(30 42 210)" />
-          <ellipse cx="12" cy="160" rx="14" ry="6" fill="#4a8a44" transform="rotate(-30 12 160)" />
-          <ellipse cx="45" cy="100" rx="12" ry="5" fill="#4a8a44" transform="rotate(25 45 100)" />
-          <ellipse cx="18" cy="50" rx="10" ry="4" fill="#4a8a44" transform="rotate(-20 18 50)" />
+        <svg width="55" height="480" viewBox="0 0 55 480">
+          <path d="M28,480 Q22,400 32,320 Q25,240 30,170 Q27,100 30,30 Q28,0 30,0" fill="none" stroke="#3d7a37" strokeWidth="7" strokeLinecap="round" />
+          <ellipse cx="15" cy="400" rx="16" ry="7" fill="#4a8a44" transform="rotate(-25 15 400)" />
+          <ellipse cx="42" cy="320" rx="15" ry="6" fill="#4a8a44" transform="rotate(30 42 320)" />
+          <ellipse cx="12" cy="240" rx="14" ry="6" fill="#4a8a44" transform="rotate(-30 12 240)" />
+          <ellipse cx="45" cy="160" rx="12" ry="5" fill="#4a8a44" transform="rotate(25 45 160)" />
+          <ellipse cx="18" cy="80" rx="10" ry="4" fill="#4a8a44" transform="rotate(-20 18 80)" />
         </svg>
       </motion.div>
 
@@ -1911,12 +1969,12 @@ function UnderwaterBackground() {
         transition={{ duration: 5.5, repeat: Infinity, ease: 'easeInOut', delay: 0.8 }}
         style={{ transformOrigin: 'bottom center' }}
       >
-        <svg width="45" height="280" viewBox="0 0 45 280">
-          <path d="M22,280 Q28,230 20,180 Q26,130 22,80 Q24,40 22,0" fill="none" stroke="#2d6a27" strokeWidth="6" strokeLinecap="round" />
-          <ellipse cx="35" cy="220" rx="14" ry="6" fill="#4a8a44" transform="rotate(28 35 220)" />
-          <ellipse cx="10" cy="170" rx="13" ry="5" fill="#4a8a44" transform="rotate(-22 10 170)" />
-          <ellipse cx="38" cy="110" rx="11" ry="5" fill="#4a8a44" transform="rotate(18 38 110)" />
-          <ellipse cx="12" cy="55" rx="9" ry="4" fill="#4a8a44" transform="rotate(-15 12 55)" />
+        <svg width="45" height="420" viewBox="0 0 45 420">
+          <path d="M22,420 Q28,350 20,270 Q26,190 22,120 Q24,60 22,0" fill="none" stroke="#2d6a27" strokeWidth="6" strokeLinecap="round" />
+          <ellipse cx="35" cy="340" rx="14" ry="6" fill="#4a8a44" transform="rotate(28 35 340)" />
+          <ellipse cx="10" cy="260" rx="13" ry="5" fill="#4a8a44" transform="rotate(-22 10 260)" />
+          <ellipse cx="38" cy="170" rx="11" ry="5" fill="#4a8a44" transform="rotate(18 38 170)" />
+          <ellipse cx="12" cy="85" rx="9" ry="4" fill="#4a8a44" transform="rotate(-15 12 85)" />
         </svg>
       </motion.div>
 
@@ -2217,10 +2275,13 @@ function AnimatedText({ children, delay = 0 }) {
 
 export default function App() {
   const [scrollProgress, setScrollProgress] = useState(0)
+  const [scrollY, setScrollY] = useState(0)
   const experienceSectionRef = useRef(null)
 
   useEffect(() => {
     const handleScroll = () => {
+      setScrollY(window.scrollY)
+
       if (!experienceSectionRef.current) return
 
       const experienceSection = experienceSectionRef.current
@@ -2502,10 +2563,10 @@ export default function App() {
 
         {/* Scroll indicator */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.5, duration: 0.8 }}
+          initial={{ opacity: 1, y: 0 }}
+          animate={{ opacity: Math.max(0, 1 - scrollY / 100), y: 0 }}
           className="fixed bottom-6 left-0 right-0 flex justify-center z-10"
+          style={{ pointerEvents: scrollY > 50 ? 'none' : 'auto' }}
         >
           <motion.div
             animate={{ y: [0, 6, 0] }}
