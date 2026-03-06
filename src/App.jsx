@@ -1,7 +1,7 @@
 
 import React, { useRef, useState, useEffect } from 'react'
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
-import { FiMail, FiLinkedin, FiArrowRight, FiMapPin } from 'react-icons/fi'
+import { FiMail, FiLinkedin, FiArrowRight, FiMapPin, FiChevronDown } from 'react-icons/fi'
 import portrait from './IMG_5825.png'
 import ripplingLogo from './image copy 4.png'
 import nvidiaLogo from './image copy 2.png'
@@ -2502,18 +2502,44 @@ export default function App() {
 
         {/* Scroll indicator */}
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.5, duration: 0.8 }}
+          className="fixed bottom-6 left-0 right-0 flex justify-center z-10"
         >
           <motion.div
-            animate={{ y: [0, 10, 0] }}
+            animate={{ y: [0, 6, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
             className="flex flex-col items-center gap-2"
           >
-            <span className="text-xs text-gray-500 uppercase tracking-widest">scroll</span>
-            <div className="w-px h-8 bg-gradient-to-b from-gray-400 to-transparent" />
+            {/* Text with background for visibility */}
+            <div className="px-7 py-3 rounded-full bg-white/80 backdrop-blur-sm border border-white/60 shadow-xl">
+              <span className="text-lg font-bold text-gray-800">more about me!</span>
+            </div>
+
+            {/* Animated arrows */}
+            <div className="flex flex-col items-center">
+              <motion.div
+                animate={{ y: [0, 5, 0], opacity: [1, 0.4, 1] }}
+                transition={{ duration: 1.2, repeat: Infinity, ease: 'easeInOut' }}
+              >
+                <FiChevronDown className="w-8 h-8 text-gray-700" />
+              </motion.div>
+              <motion.div
+                animate={{ y: [0, 5, 0], opacity: [0.7, 0.2, 0.7] }}
+                transition={{ duration: 1.2, repeat: Infinity, ease: 'easeInOut', delay: 0.1 }}
+                className="-mt-3"
+              >
+                <FiChevronDown className="w-8 h-8 text-gray-700" />
+              </motion.div>
+              <motion.div
+                animate={{ y: [0, 5, 0], opacity: [0.4, 0.1, 0.4] }}
+                transition={{ duration: 1.2, repeat: Infinity, ease: 'easeInOut', delay: 0.2 }}
+                className="-mt-3"
+              >
+                <FiChevronDown className="w-8 h-8 text-gray-700" />
+              </motion.div>
+            </div>
           </motion.div>
         </motion.div>
       </section>
