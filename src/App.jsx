@@ -528,6 +528,24 @@ function NatureBackground() {
         {/* Peak 9 (220) */}
         <path d="M220,240 L260,320 L248,302 L232,312 L220,285 L210,300 L200,280 L190,302 L178,275 Z" fill="url(#snow-main)" opacity="0.85" />
 
+        {/* Peak 10 (940) */}
+        <path d="M940,90 L962,130 L953,122 L945,126 L940,110 L935,118 L928,112 L920,130 Z" fill="url(#snow-main)" opacity="0.8" />
+
+        {/* Peak 11 (1020) */}
+        <path d="M1020,85 L1042,125 L1033,117 L1025,121 L1020,105 L1015,113 L1008,107 L1000,125 Z" fill="url(#snow-main)" opacity="0.75" />
+
+        {/* Peak 12 (1100) */}
+        <path d="M1100,90 L1120,125 L1112,118 L1105,122 L1100,108 L1095,115 L1088,110 L1080,125 Z" fill="url(#snow-main)" opacity="0.7" />
+
+        {/* Peak 13 (1180) */}
+        <path d="M1180,95 L1198,128 L1190,122 L1185,125 L1180,112 L1175,118 L1168,114 L1162,128 Z" fill="url(#snow-main)" opacity="0.65" />
+
+        {/* Peak 14 (1260) */}
+        <path d="M1260,100 L1276,130 L1269,125 L1264,127 L1260,116 L1256,122 L1250,118 L1244,130 Z" fill="url(#snow-main)" opacity="0.6" />
+
+        {/* Peak 15 (1340) */}
+        <path d="M1340,105 L1355,132 L1349,127 L1344,130 L1340,120 L1336,125 L1331,122 L1325,132 Z" fill="url(#snow-main)" opacity="0.55" />
+
         {/* Rock texture lines */}
         <path d="M350,280 Q370,300 355,330" fill="none" stroke="#3a3025" strokeWidth="1.5" opacity="0.25" />
         <path d="M480,250 Q500,275 485,305" fill="none" stroke="#3a3025" strokeWidth="1.5" opacity="0.25" />
