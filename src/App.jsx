@@ -102,6 +102,117 @@ const EXPERIENCES = [
   },
 ]
 
+const MEADOW_BLOOMS = [
+  { left: '4%', bottom: '10.7%', color: '#f7d56f', scale: 0.9, delay: 0.1 },
+  { left: '6.5%', bottom: '10.9%', color: '#f28a9b', scale: 0.7, delay: 0.6 },
+  { left: '18%', bottom: '10.8%', color: '#f5f0a7', scale: 0.65, delay: 1.1 },
+  { left: '22%', bottom: '11.1%', color: '#b8e38d', scale: 0.8, delay: 0.4 },
+  { left: '30%', bottom: '10.8%', color: '#d9b8ff', scale: 0.6, delay: 1.5 },
+  { left: '58%', bottom: '10.8%', color: '#ffe08a', scale: 0.75, delay: 0.8 },
+  { left: '63%', bottom: '11.2%', color: '#f49bb6', scale: 0.6, delay: 1.8 },
+  { left: '78%', bottom: '10.9%', color: '#fff4b8', scale: 0.8, delay: 0.2 },
+  { left: '86%', bottom: '11%', color: '#b7e7ff', scale: 0.65, delay: 1.3 },
+  { left: '93%', bottom: '10.8%', color: '#f7c2d4', scale: 0.7, delay: 0.9 },
+]
+
+const REED_CLUMPS = [
+  { left: '2%', bottom: '8.8%', height: 96, width: 80, delay: 0.2 },
+  { left: '20%', bottom: '8.8%', height: 76, width: 70, delay: 0.9 },
+  { left: '70%', bottom: '8.7%', height: 86, width: 78, delay: 0.4 },
+  { left: '88%', bottom: '8.7%', height: 104, width: 86, delay: 1.2 },
+]
+
+const FIREFLY_POINTS = [
+  { left: '10%', top: '56%', size: 4, delay: 0 },
+  { left: '16%', top: '48%', size: 3, delay: 0.7 },
+  { left: '31%', top: '58%', size: 3, delay: 1.4 },
+  { left: '55%', top: '55%', size: 4, delay: 0.4 },
+  { left: '69%', top: '49%', size: 3, delay: 1.1 },
+  { left: '82%', top: '57%', size: 4, delay: 1.8 },
+]
+
+const WATER_GLEAMS = [
+  { left: '12%', top: '35%', width: 120, delay: 0 },
+  { left: '24%', top: '62%', width: 180, delay: 1.2 },
+  { left: '42%', top: '28%', width: 135, delay: 0.6 },
+  { left: '63%', top: '55%', width: 160, delay: 1.6 },
+  { left: '79%', top: '34%', width: 110, delay: 0.9 },
+]
+
+const SKY_WISPS = [
+  { top: '10%', left: '-8%', width: '42%', rotate: -7, opacity: 0.28, delay: 0 },
+  { top: '18%', left: '18%', width: '38%', rotate: 4, opacity: 0.22, delay: 1.2 },
+  { top: '12%', left: '52%', width: '46%', rotate: -3, opacity: 0.24, delay: 0.7 },
+  { top: '27%', left: '64%', width: '36%', rotate: 6, opacity: 0.18, delay: 1.8 },
+]
+
+const SKY_CONSTELLATION_DUST = [
+  { left: '12%', top: '18%', size: 2, delay: 0.3 },
+  { left: '23%', top: '25%', size: 1.5, delay: 1.1 },
+  { left: '34%', top: '14%', size: 2.5, delay: 0.7 },
+  { left: '46%', top: '31%', size: 1.7, delay: 1.6 },
+  { left: '58%', top: '18%', size: 2.2, delay: 0.1 },
+  { left: '74%', top: '29%', size: 1.8, delay: 1.3 },
+  { left: '86%', top: '16%', size: 2.4, delay: 0.9 },
+  { left: '92%', top: '34%', size: 1.6, delay: 1.9 },
+]
+
+const CANOPY_SPARKS = [
+  { left: '7%', bottom: '20%', width: 150, delay: 0.2 },
+  { left: '18%', bottom: '17%', width: 120, delay: 1.4 },
+  { left: '52%', bottom: '18.5%', width: 170, delay: 0.8 },
+  { left: '72%', bottom: '19%', width: 130, delay: 1.1 },
+  { left: '86%', bottom: '17.5%', width: 150, delay: 0.4 },
+]
+
+const FOREGROUND_GRASS_BLADES = [
+  { left: '0%', bottom: '8.1%', width: 190, height: 128, delay: 0 },
+  { left: '16%', bottom: '8.2%', width: 160, height: 104, delay: 0.7 },
+  { left: '39%', bottom: '8.1%', width: 180, height: 118, delay: 1.2 },
+  { left: '62%', bottom: '8.2%', width: 170, height: 110, delay: 0.5 },
+  { left: '82%', bottom: '8.1%', width: 210, height: 132, delay: 1.5 },
+]
+
+const UNDERWATER_RAY_BEAMS = [
+  { left: '-2%', width: 260, opacity: 0.16, rotate: -7, delay: 0 },
+  { left: '16%', width: 220, opacity: 0.12, rotate: 4, delay: 1.4 },
+  { left: '38%', width: 300, opacity: 0.18, rotate: -3, delay: 0.7 },
+  { left: '68%', width: 240, opacity: 0.13, rotate: 5, delay: 1.9 },
+  { left: '83%', width: 280, opacity: 0.12, rotate: -5, delay: 1.1 },
+]
+
+const REEF_STACKS = [
+  { left: '-3%', bottom: '6%', scale: 1.15, color: '#ef5f91', accent: '#ffb35d', delay: 0.2 },
+  { left: '12%', bottom: '7%', scale: 0.78, color: '#8f77ff', accent: '#53d7b8', delay: 1 },
+  { left: '68%', bottom: '6.5%', scale: 0.95, color: '#ff6f7f', accent: '#7bdc6b', delay: 0.5 },
+  { left: '84%', bottom: '5.8%', scale: 1.05, color: '#62c77d', accent: '#78b7ff', delay: 1.6 },
+]
+
+const MINI_FISH_SCHOOLS = [
+  { top: '21%', delay: 0, duration: 32, color: '#ffe36e', direction: 'right' },
+  { top: '38%', delay: 6, duration: 40, color: '#9be7ff', direction: 'left' },
+  { top: '56%', delay: 3, duration: 36, color: '#ffb36b', direction: 'right' },
+  { top: '70%', delay: 11, duration: 44, color: '#c6ff8d', direction: 'left' },
+]
+
+const BUBBLE_COLUMNS = [
+  { left: '8%', bottom: '14%', count: 6, delay: 0 },
+  { left: '32%', bottom: '18%', count: 5, delay: 1.1 },
+  { left: '57%', bottom: '12%', count: 7, delay: 0.5 },
+  { left: '78%', bottom: '16%', count: 5, delay: 1.7 },
+  { left: '92%', bottom: '11%', count: 6, delay: 0.9 },
+]
+
+const BIOLUMEN_DOTS = [
+  { left: '6%', top: '62%', delay: 0.2 },
+  { left: '14%', top: '74%', delay: 1.4 },
+  { left: '27%', top: '58%', delay: 0.7 },
+  { left: '46%', top: '78%', delay: 1.9 },
+  { left: '64%', top: '63%', delay: 1.1 },
+  { left: '83%', top: '70%', delay: 0.4 },
+  { left: '94%', top: '56%', delay: 1.6 },
+]
+
 // Magnetic button effect
 function MagneticButton({ children, className, href, ...props }) {
   const ref = useRef(null)
@@ -241,10 +352,124 @@ function NatureBackground() {
     <div className="fixed inset-0 overflow-hidden" style={{ zIndex: -10 }}>
       {/* Sky gradient - beautiful golden hour with more depth */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-sky-400 via-sky-300 to-amber-100" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#3a9fd6] via-[#72c8e8] to-[#f0d090]" />
         {/* Atmospheric haze layers */}
-        <div className="absolute inset-0 bg-gradient-to-t from-amber-100/40 via-transparent to-sky-300/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#ffe4a0]/60 via-transparent to-[#9fdcff]/30" />
+        <div
+          className="absolute inset-0 opacity-70"
+          style={{
+            background: `
+              radial-gradient(ellipse at 18% 12%, rgba(255,244,175,0.9) 0%, rgba(255,214,115,0.35) 18%, transparent 40%),
+              radial-gradient(ellipse at 78% 24%, rgba(178,223,255,0.55) 0%, transparent 34%),
+              linear-gradient(115deg, rgba(255,154,128,0.18) 0%, transparent 30%, rgba(95,184,226,0.1) 65%, rgba(101,126,196,0.16) 100%)
+            `,
+          }}
+        />
+        <motion.div
+          className="absolute inset-x-[-10%] top-[8%] h-[34%] opacity-25"
+          style={{
+            background: 'linear-gradient(100deg, transparent 0%, rgba(255,255,255,0.5) 20%, transparent 36%, rgba(255,236,178,0.34) 53%, transparent 72%, rgba(255,255,255,0.28) 88%, transparent 100%)',
+            filter: 'blur(22px)',
+          }}
+          animate={{ x: ['-4%', '4%', '-4%'], opacity: [0.18, 0.3, 0.18] }}
+          transition={{ duration: 16, repeat: Infinity, ease: 'easeInOut' }}
+        />
+        <div
+          className="absolute inset-0 opacity-[0.16] mix-blend-soft-light"
+          style={{
+            backgroundImage: 'linear-gradient(rgba(255,255,255,0.35) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.25) 1px, transparent 1px)',
+            backgroundSize: '42px 42px',
+          }}
+        />
       </div>
+
+      {/* Painterly sky detail: soft wash lines, vapor wisps, and tiny light flecks */}
+      <svg className="absolute inset-x-0 top-0 h-[44%] w-full pointer-events-none" viewBox="0 0 1440 420" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="sky-brush-warm" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="rgba(255,236,165,0)" />
+            <stop offset="30%" stopColor="rgba(255,238,175,0.32)" />
+            <stop offset="58%" stopColor="rgba(255,255,255,0.2)" />
+            <stop offset="100%" stopColor="rgba(255,236,165,0)" />
+          </linearGradient>
+          <linearGradient id="sky-brush-cool" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="rgba(170,220,255,0)" />
+            <stop offset="45%" stopColor="rgba(214,241,255,0.24)" />
+            <stop offset="100%" stopColor="rgba(170,220,255,0)" />
+          </linearGradient>
+        </defs>
+        <motion.path
+          d="M-40,112 C170,84 288,142 476,102 C660,62 804,82 994,62 C1172,43 1290,70 1490,40"
+          fill="none"
+          stroke="url(#sky-brush-warm)"
+          strokeWidth="28"
+          strokeLinecap="round"
+          animate={{ pathLength: [0.88, 1, 0.88], opacity: [0.45, 0.76, 0.45] }}
+          transition={{ duration: 14, repeat: Infinity, ease: 'easeInOut' }}
+        />
+        <motion.path
+          d="M-60,242 C142,196 300,268 492,226 C690,184 820,244 1014,196 C1192,152 1312,190 1500,154"
+          fill="none"
+          stroke="url(#sky-brush-cool)"
+          strokeWidth="34"
+          strokeLinecap="round"
+          animate={{ pathLength: [1, 0.9, 1], opacity: [0.32, 0.58, 0.32] }}
+          transition={{ duration: 18, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }}
+        />
+        <path d="M126,324 C230,282 320,326 426,286 C530,246 622,288 736,250 C850,214 936,258 1048,222" fill="none" stroke="rgba(255,255,255,0.16)" strokeWidth="4" strokeLinecap="round" />
+        <path d="M846,116 C945,88 1036,122 1150,92 C1244,68 1310,96 1408,72" fill="none" stroke="rgba(255,250,225,0.18)" strokeWidth="5" strokeLinecap="round" />
+      </svg>
+
+      {SKY_WISPS.map((wisp, i) => (
+        <motion.div
+          key={`sky-wisp-${i}`}
+          className="absolute h-12 rounded-full pointer-events-none"
+          style={{
+            top: wisp.top,
+            left: wisp.left,
+            width: wisp.width,
+            opacity: wisp.opacity,
+            rotate: wisp.rotate,
+            background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.72) 26%, rgba(255,246,220,0.42) 52%, rgba(204,235,255,0.38) 72%, transparent 100%)',
+            filter: 'blur(16px)',
+          }}
+          animate={{ x: ['-4%', '5%', '-4%'], scaleX: [0.96, 1.08, 0.96] }}
+          transition={{ duration: 18 + i * 3, repeat: Infinity, ease: 'easeInOut', delay: wisp.delay }}
+        />
+      ))}
+
+      {SKY_CONSTELLATION_DUST.map((dust, i) => (
+        <motion.div
+          key={`sky-dust-${i}`}
+          className="absolute rounded-full pointer-events-none"
+          style={{
+            left: dust.left,
+            top: dust.top,
+            width: `${dust.size}px`,
+            height: `${dust.size}px`,
+            background: 'rgba(255,252,220,0.95)',
+            boxShadow: '0 0 12px rgba(255,245,186,0.7)',
+          }}
+          animate={{ opacity: [0.15, 0.9, 0.15], scale: [0.7, 1.6, 0.7] }}
+          transition={{ duration: 4.5, repeat: Infinity, ease: 'easeInOut', delay: dust.delay }}
+        />
+      ))}
+
+      {/* Birds flying in the sky */}
+      <motion.div
+        className="absolute pointer-events-none"
+        style={{ top: '11%', left: '34%', zIndex: 2 }}
+        animate={{ x: [-15, 15, -15], y: [0, -4, 0] }}
+        transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
+      >
+        <svg width="100" height="36" viewBox="0 0 100 36" fill="none">
+          <path d="M2,18 Q7,11 12,18 Q17,11 22,18" stroke="#374151" strokeWidth="1.8" strokeLinecap="round" opacity="0.7" />
+          <path d="M28,13 Q33,6 38,13 Q43,6 48,13" stroke="#374151" strokeWidth="1.8" strokeLinecap="round" opacity="0.65" />
+          <path d="M54,20 Q58,14 62,20 Q66,14 70,20" stroke="#374151" strokeWidth="1.5" strokeLinecap="round" opacity="0.55" />
+          <path d="M76,10 Q80,5 84,10" stroke="#374151" strokeWidth="1.4" strokeLinecap="round" opacity="0.5" />
+          <path d="M88,16 Q91,12 94,16" stroke="#374151" strokeWidth="1.2" strokeLinecap="round" opacity="0.4" />
+        </svg>
+      </motion.div>
 
       {/* Sun with realistic glow layers - TOP LEFT */}
       <div className="absolute top-[3%] left-[8%]">
@@ -252,13 +477,13 @@ function NatureBackground() {
         <motion.div
           className="absolute"
           style={{
-            width: '800px',
-            height: '800px',
-            top: '-300px',
-            left: '-300px',
-            background: 'radial-gradient(circle, rgba(255,220,150,0.4) 0%, rgba(255,200,100,0.2) 30%, rgba(255,180,80,0.1) 50%, transparent 70%)',
+            width: '1100px',
+            height: '1100px',
+            top: '-420px',
+            left: '-420px',
+            background: 'radial-gradient(circle, rgba(255,230,160,0.5) 0%, rgba(255,210,110,0.28) 28%, rgba(255,190,90,0.12) 50%, transparent 70%)',
           }}
-          animate={{ scale: [1, 1.15, 1], opacity: [0.7, 1, 0.7] }}
+          animate={{ scale: [1, 1.12, 1], opacity: [0.75, 1, 0.75] }}
           transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
         />
         {/* Outer glow */}
@@ -445,6 +670,55 @@ function NatureBackground() {
         </svg>
       </motion.div>
 
+      {/* Cloud silver linings and small scattered cloudlets */}
+      <svg className="absolute top-[4%] left-0 w-full h-[34%] pointer-events-none" viewBox="0 0 1440 330" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="cloud-lining" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="rgba(255,255,255,0)" />
+            <stop offset="42%" stopColor="rgba(255,255,255,0.48)" />
+            <stop offset="62%" stopColor="rgba(255,238,183,0.34)" />
+            <stop offset="100%" stopColor="rgba(255,255,255,0)" />
+          </linearGradient>
+          <filter id="cloudlet-blur">
+            <feGaussianBlur stdDeviation="0.8" />
+          </filter>
+        </defs>
+        <motion.path
+          d="M26,154 C90,132 150,164 216,142 C268,124 316,136 362,120"
+          fill="none"
+          stroke="url(#cloud-lining)"
+          strokeWidth="5"
+          strokeLinecap="round"
+          animate={{ opacity: [0.38, 0.78, 0.38] }}
+          transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+        />
+        <motion.path
+          d="M504,106 C584,82 660,116 738,92 C812,70 876,88 950,72"
+          fill="none"
+          stroke="url(#cloud-lining)"
+          strokeWidth="5"
+          strokeLinecap="round"
+          animate={{ opacity: [0.3, 0.68, 0.3] }}
+          transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+        />
+        <motion.path
+          d="M914,176 C996,150 1076,184 1152,160 C1228,136 1300,156 1384,136"
+          fill="none"
+          stroke="url(#cloud-lining)"
+          strokeWidth="5"
+          strokeLinecap="round"
+          animate={{ opacity: [0.26, 0.58, 0.26] }}
+          transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
+        />
+        <g filter="url(#cloudlet-blur)">
+          <ellipse cx="214" cy="48" rx="34" ry="10" fill="rgba(255,255,255,0.26)" />
+          <ellipse cx="274" cy="62" rx="52" ry="14" fill="rgba(255,248,232,0.18)" />
+          <ellipse cx="1048" cy="42" rx="60" ry="16" fill="rgba(255,255,255,0.2)" />
+          <ellipse cx="1236" cy="86" rx="42" ry="11" fill="rgba(255,248,232,0.18)" />
+          <ellipse cx="734" cy="236" rx="48" ry="13" fill="rgba(255,255,255,0.16)" />
+        </g>
+      </svg>
+
       {/* BACK MOUNTAIN LAYER - distant blue-gray mountains */}
       <svg className="absolute bottom-[22%] w-full h-[45%]" viewBox="0 0 1440 450" preserveAspectRatio="none">
         <defs>
@@ -562,6 +836,40 @@ function NatureBackground() {
         <path d="M370,190 Q385,180 400,200" fill="none" stroke="#ffffff" strokeWidth="1.5" opacity="0.55" />
       </svg>
 
+      {/* Atmospheric contour and valley glow over the mountain range */}
+      <svg className="absolute bottom-[18%] w-full h-[50%] pointer-events-none" viewBox="0 0 1440 500" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="ridge-light" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="rgba(255,238,188,0)" />
+            <stop offset="24%" stopColor="rgba(255,248,218,0.28)" />
+            <stop offset="52%" stopColor="rgba(255,246,224,0.18)" />
+            <stop offset="100%" stopColor="rgba(255,238,188,0)" />
+          </linearGradient>
+          <linearGradient id="cool-valley-haze" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stopColor="rgba(198,229,242,0)" />
+            <stop offset="62%" stopColor="rgba(198,229,242,0.26)" />
+            <stop offset="100%" stopColor="rgba(255,236,190,0.16)" />
+          </linearGradient>
+        </defs>
+        <path d="M0,315 C110,292 190,315 300,278 C390,248 470,274 560,224 C660,168 760,174 860,143 C970,111 1090,118 1210,132 C1300,142 1375,125 1440,138" fill="none" stroke="url(#ridge-light)" strokeWidth="3" opacity="0.75" />
+        <path d="M240,380 C360,330 470,365 590,318 C720,265 860,285 1000,242 C1130,204 1260,225 1440,198 L1440,500 L240,500 Z" fill="url(#cool-valley-haze)" opacity="0.75" />
+        <path d="M472,132 C515,164 544,214 560,270" fill="none" stroke="rgba(45,35,28,0.2)" strokeWidth="2" strokeLinecap="round" />
+        <path d="M704,92 C736,132 764,178 784,230" fill="none" stroke="rgba(45,35,28,0.18)" strokeWidth="2" strokeLinecap="round" />
+        <path d="M858,98 C830,145 812,182 800,226" fill="none" stroke="rgba(255,255,255,0.14)" strokeWidth="2" strokeLinecap="round" />
+        <path d="M542,92 C510,148 488,206 472,275" fill="none" stroke="rgba(255,255,255,0.16)" strokeWidth="2" strokeLinecap="round" />
+        <path d="M330,238 C365,264 392,310 406,362" fill="none" stroke="rgba(45,35,28,0.18)" strokeWidth="1.7" strokeLinecap="round" />
+      </svg>
+
+      <motion.div
+        className="absolute bottom-[24%] left-[-8%] right-[-8%] h-[18%] pointer-events-none"
+        style={{
+          background: 'linear-gradient(90deg, transparent 0%, rgba(220,241,232,0.2) 18%, rgba(255,245,218,0.28) 48%, rgba(196,225,235,0.18) 78%, transparent 100%)',
+          filter: 'blur(18px)',
+        }}
+        animate={{ x: ['-2%', '2%', '-2%'], opacity: [0.45, 0.7, 0.45] }}
+        transition={{ duration: 18, repeat: Infinity, ease: 'easeInOut' }}
+      />
+
       {/* Foothills - green forested with texture */}
       <svg className="absolute bottom-[14%] w-full h-[20%]" viewBox="0 0 1440 200" preserveAspectRatio="none">
         <defs>
@@ -625,6 +933,47 @@ function NatureBackground() {
           C1375,125 1380,105 1385,120 C1390,98 1395,120 1400,108 C1405,130 1410,112 1415,128 C1420,105 1425,128 1430,115
           C1435,135 1440,120 1440,120 L1440,260 Z" fill="url(#forest-deep)" />
       </svg>
+
+      {/* Layered canopy highlights so the green reads lush instead of flat */}
+      <svg className="absolute bottom-[13.2%] w-full h-[25%] pointer-events-none" viewBox="0 0 1440 245" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="canopy-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="rgba(149,204,104,0.46)" />
+            <stop offset="48%" stopColor="rgba(79,158,101,0.3)" />
+            <stop offset="100%" stopColor="rgba(19,79,62,0)" />
+          </linearGradient>
+          <linearGradient id="canopy-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="rgba(66,164,137,0.34)" />
+            <stop offset="100%" stopColor="rgba(18,70,62,0)" />
+          </linearGradient>
+          <filter id="canopy-soften">
+            <feGaussianBlur stdDeviation="1.2" />
+          </filter>
+        </defs>
+        <path d="M0,210 C90,130 180,178 260,112 C350,40 442,118 536,62 C640,0 720,82 816,38 C928,-12 1005,72 1106,40 C1230,2 1315,74 1440,28 L1440,245 L0,245 Z" fill="url(#canopy-blue)" opacity="0.8" />
+        <path d="M0,190 C82,142 150,170 230,120 C320,64 408,124 500,82 C612,28 700,104 808,62 C920,18 1024,92 1128,62 C1256,26 1322,88 1440,58 L1440,245 L0,245 Z" fill="url(#canopy-gold)" filter="url(#canopy-soften)" opacity="0.72" />
+        <path d="M44,164 C88,134 134,148 174,122" fill="none" stroke="rgba(180,227,129,0.42)" strokeWidth="4" strokeLinecap="round" />
+        <path d="M292,124 C348,86 398,112 452,78" fill="none" stroke="rgba(143,213,124,0.32)" strokeWidth="4" strokeLinecap="round" />
+        <path d="M646,106 C706,70 770,96 826,62" fill="none" stroke="rgba(183,230,140,0.28)" strokeWidth="4" strokeLinecap="round" />
+        <path d="M1044,96 C1110,62 1184,90 1242,58" fill="none" stroke="rgba(171,221,129,0.3)" strokeWidth="4" strokeLinecap="round" />
+      </svg>
+
+      {CANOPY_SPARKS.map((spark, i) => (
+        <motion.div
+          key={`canopy-spark-${i}`}
+          className="absolute h-5 rounded-full pointer-events-none"
+          style={{
+            left: spark.left,
+            bottom: spark.bottom,
+            width: `${spark.width}px`,
+            background: 'linear-gradient(90deg, transparent 0%, rgba(185,235,126,0.36) 32%, rgba(255,235,154,0.42) 52%, transparent 100%)',
+            filter: 'blur(7px)',
+            zIndex: 3,
+          }}
+          animate={{ x: [-10, 14, -10], opacity: [0.28, 0.68, 0.28] }}
+          transition={{ duration: 7 + i, repeat: Infinity, ease: 'easeInOut', delay: spark.delay }}
+        />
+      ))}
 
       {/* Individual detailed trees - Left group */}
       <motion.div
@@ -1091,6 +1440,26 @@ function NatureBackground() {
         </svg>
       </div>
 
+      {/* Soft walking path and meadow shadows tie the cabin into the scene */}
+      <svg className="absolute bottom-[8.6%] left-0 w-full h-[16%] pointer-events-none" viewBox="0 0 1440 160" preserveAspectRatio="none" style={{ zIndex: 4 }}>
+        <defs>
+          <linearGradient id="meadow-path" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" stopColor="rgba(205,184,126,0.34)" />
+            <stop offset="54%" stopColor="rgba(154,139,95,0.2)" />
+            <stop offset="100%" stopColor="rgba(80,101,67,0)" />
+          </linearGradient>
+          <linearGradient id="meadow-shadow" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="rgba(25,69,49,0)" />
+            <stop offset="48%" stopColor="rgba(23,65,48,0.28)" />
+            <stop offset="100%" stopColor="rgba(25,69,49,0)" />
+          </linearGradient>
+        </defs>
+        <path d="M655,0 C620,34 566,62 528,96 C494,126 450,142 382,160 L868,160 C782,132 734,112 710,82 C686,52 686,28 655,0 Z" fill="url(#meadow-path)" />
+        <path d="M0,118 C160,92 296,132 466,104 C642,74 760,134 934,96 C1112,58 1276,110 1440,74 L1440,160 L0,160 Z" fill="url(#meadow-shadow)" />
+        <path d="M538,118 C594,94 648,108 704,82" fill="none" stroke="rgba(255,236,172,0.22)" strokeWidth="4" strokeLinecap="round" />
+        <path d="M642,126 C704,106 760,122 826,98" fill="none" stroke="rgba(37,83,52,0.2)" strokeWidth="3" strokeLinecap="round" />
+      </svg>
+
       {/* Grass/meadow with more detail and texture */}
       <div className="absolute bottom-[10%] left-0 right-0 h-[6%]">
         <svg className="w-full h-full" viewBox="0 0 1440 60" preserveAspectRatio="none">
@@ -1152,6 +1521,137 @@ function NatureBackground() {
           <ellipse cx="1280" cy="16" rx="5" ry="3" fill="#5a6a4a" opacity="0.5" />
         </svg>
       </div>
+
+      {/* Foreground meadow polish: reeds, flowers, and glints at the waterline */}
+      {FOREGROUND_GRASS_BLADES.map((patch, i) => (
+        <motion.div
+          key={`grass-patch-${i}`}
+          className="absolute pointer-events-none"
+          style={{ left: patch.left, bottom: patch.bottom, zIndex: 8 }}
+          animate={{ rotate: [-0.7, 0.9, -0.7] }}
+          transition={{ duration: 6 + i * 0.4, repeat: Infinity, ease: 'easeInOut', delay: patch.delay }}
+        >
+          <svg width={patch.width} height={patch.height} viewBox={`0 0 ${patch.width} ${patch.height}`}>
+            <defs>
+              <linearGradient id={`grass-depth-${i}`} x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stopColor="#93bf69" />
+                <stop offset="42%" stopColor="#417f4b" />
+                <stop offset="100%" stopColor="#205642" />
+              </linearGradient>
+              <linearGradient id={`grass-shadow-${i}`} x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#6ea85e" />
+                <stop offset="100%" stopColor="#174737" />
+              </linearGradient>
+            </defs>
+            {[...Array(16)].map((_, blade) => {
+              const x = 8 + blade * (patch.width / 17)
+              const bladeHeight = patch.height * (0.48 + (blade % 5) * 0.09)
+              const sway = blade % 2 === 0 ? -16 - (blade % 3) * 4 : 14 + (blade % 4) * 3
+              const stroke = blade % 3 === 0 ? `url(#grass-depth-${i})` : `url(#grass-shadow-${i})`
+              return (
+                <path
+                  key={blade}
+                  d={`M${x},${patch.height} C${x + sway * 0.45},${patch.height - bladeHeight * 0.32} ${x + sway},${patch.height - bladeHeight * 0.72} ${x + sway * 0.35},${patch.height - bladeHeight}`}
+                  fill="none"
+                  stroke={stroke}
+                  strokeWidth={blade % 4 === 0 ? 4 : 2.6}
+                  strokeLinecap="round"
+                  opacity={blade % 4 === 0 ? 0.58 : 0.74}
+                />
+              )
+            })}
+            <path d={`M0,${patch.height - 10} C${patch.width * 0.25},${patch.height - 28} ${patch.width * 0.72},${patch.height - 4} ${patch.width},${patch.height - 18}`} fill="none" stroke="rgba(196,230,142,0.26)" strokeWidth="3" strokeLinecap="round" />
+          </svg>
+        </motion.div>
+      ))}
+
+      {REED_CLUMPS.map((reed, i) => (
+        <motion.div
+          key={`reed-${i}`}
+          className="absolute pointer-events-none"
+          style={{ left: reed.left, bottom: reed.bottom, zIndex: 8 }}
+          animate={{ rotate: [-1.5, 1.5, -1.5] }}
+          transition={{ duration: 5.5 + i, repeat: Infinity, ease: 'easeInOut', delay: reed.delay }}
+        >
+          <svg width={reed.width} height={reed.height} viewBox={`0 0 ${reed.width} ${reed.height}`}>
+            <defs>
+              <linearGradient id={`reed-stem-${i}`} x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#83a95c" />
+                <stop offset="100%" stopColor="#395f35" />
+              </linearGradient>
+            </defs>
+            {[0, 1, 2, 3, 4].map((blade) => {
+              const x = 12 + blade * 12
+              const tip = 10 + (blade % 2) * 12
+              const bend = blade % 2 === 0 ? -10 : 10
+              return (
+                <path
+                  key={blade}
+                  d={`M${x},${reed.height} C${x + bend},${reed.height * 0.68} ${x + bend * 1.3},${reed.height * 0.38} ${x + bend * 0.45},${tip}`}
+                  fill="none"
+                  stroke={`url(#reed-stem-${i})`}
+                  strokeWidth={blade === 2 ? 4 : 3}
+                  strokeLinecap="round"
+                  opacity={0.82}
+                />
+              )
+            })}
+            <ellipse cx="18" cy={reed.height * 0.35} rx="6" ry="18" fill="#6b4b2c" transform={`rotate(-8 18 ${reed.height * 0.35})`} opacity="0.85" />
+            <ellipse cx={reed.width - 20} cy={reed.height * 0.28} rx="5" ry="15" fill="#775333" transform={`rotate(9 ${reed.width - 20} ${reed.height * 0.28})`} opacity="0.78" />
+          </svg>
+        </motion.div>
+      ))}
+
+      {MEADOW_BLOOMS.map((bloom, i) => (
+        <motion.div
+          key={`bloom-${i}`}
+          className="absolute pointer-events-none"
+          style={{ left: bloom.left, bottom: bloom.bottom, zIndex: 9 }}
+          animate={{ y: [0, -3, 0], rotate: [-1, 1, -1], scale: [bloom.scale, bloom.scale * 1.04, bloom.scale] }}
+          transition={{ duration: 3.8, repeat: Infinity, ease: 'easeInOut', delay: bloom.delay }}
+        >
+          <svg width="42" height="54" viewBox="0 0 42 54">
+            <path d="M21,52 C20,42 20,34 22,24" fill="none" stroke="#3d7a3f" strokeWidth="2.5" strokeLinecap="round" />
+            <path d="M20,39 C13,34 10,36 7,40" fill="none" stroke="#4f9051" strokeWidth="2" strokeLinecap="round" />
+            <path d="M22,35 C30,29 34,31 36,35" fill="none" stroke="#4f9051" strokeWidth="2" strokeLinecap="round" />
+            {[0, 72, 144, 216, 288].map((rotation) => (
+              <ellipse
+                key={rotation}
+                cx="21"
+                cy="18"
+                rx="5"
+                ry="9"
+                fill={bloom.color}
+                transform={`rotate(${rotation} 21 18) translate(0 -5)`}
+                opacity="0.92"
+              />
+            ))}
+            <circle cx="21" cy="18" r="4.5" fill="#f7b955" />
+          </svg>
+        </motion.div>
+      ))}
+
+      <svg className="absolute bottom-[8.7%] left-0 right-0 w-full h-[8%] pointer-events-none" viewBox="0 0 1440 86" preserveAspectRatio="none" style={{ zIndex: 8 }}>
+        <defs>
+          <linearGradient id="shore-gold-trim" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="rgba(255,232,160,0)" />
+            <stop offset="24%" stopColor="rgba(255,240,184,0.45)" />
+            <stop offset="50%" stopColor="rgba(255,250,218,0.55)" />
+            <stop offset="78%" stopColor="rgba(255,232,160,0.34)" />
+            <stop offset="100%" stopColor="rgba(255,232,160,0)" />
+          </linearGradient>
+        </defs>
+        <motion.path
+          d="M0,24 C90,14 140,30 230,22 C340,12 420,33 520,20 C642,6 720,31 842,18 C960,8 1040,30 1140,21 C1265,10 1350,30 1440,20"
+          fill="none"
+          stroke="url(#shore-gold-trim)"
+          strokeWidth="4"
+          strokeLinecap="round"
+          animate={{ opacity: [0.45, 0.85, 0.45], pathLength: [0.92, 1, 0.92] }}
+          transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
+        />
+        <path d="M0,60 C130,34 240,72 385,45 C520,20 670,58 815,36 C995,8 1160,54 1440,26" fill="none" stroke="rgba(255,255,255,0.16)" strokeWidth="2" strokeLinecap="round" />
+      </svg>
 
       {/* Wooden Sailboat on the lake */}
       <motion.div
@@ -1442,9 +1942,11 @@ function NatureBackground() {
       <div className="absolute bottom-0 left-0 right-0 h-[12%] overflow-hidden">
         {/* Water base with depth gradient */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-b from-sky-400/85 via-sky-500/80 to-sky-600/85" />
+          <div className="absolute inset-0 bg-gradient-to-b from-teal-400/90 via-teal-500/85 to-teal-600/90" />
           {/* Depth variation */}
-          <div className="absolute inset-0 bg-gradient-to-r from-sky-600/20 via-transparent to-sky-600/20" />
+          <div className="absolute inset-0 bg-gradient-to-r from-teal-700/20 via-transparent to-teal-700/20" />
+          {/* Mountain reflection tint */}
+          <div className="absolute inset-0 bg-gradient-to-b from-sky-300/25 to-transparent" />
         </div>
 
         {/* Animated water surface texture */}
@@ -1464,6 +1966,26 @@ function NatureBackground() {
           animate={{ x: [0, -120] }}
           transition={{ duration: 5, repeat: Infinity, ease: 'linear' }}
         />
+
+        {WATER_GLEAMS.map((gleam, i) => (
+          <motion.div
+            key={`gleam-${i}`}
+            className="absolute h-px rounded-full"
+            style={{
+              left: gleam.left,
+              top: gleam.top,
+              width: `${gleam.width}px`,
+              background: 'linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.45) 35%, rgba(255,245,188,0.7) 50%, rgba(255,255,255,0.35) 65%, transparent 100%)',
+              boxShadow: '0 0 14px rgba(255,245,190,0.35)',
+            }}
+            animate={{
+              opacity: [0.16, 0.75, 0.16],
+              scaleX: [0.7, 1.2, 0.7],
+              x: [0, 24, 0],
+            }}
+            transition={{ duration: 3.5 + i * 0.35, repeat: Infinity, ease: 'easeInOut', delay: gleam.delay }}
+          />
+        ))}
 
         {/* Realistic water ripples - multiple layers */}
         <svg className="absolute inset-0 w-full h-full" preserveAspectRatio="none">
@@ -1802,6 +2324,41 @@ function NatureBackground() {
           background: 'linear-gradient(180deg, transparent 0%, rgba(200,220,240,0.15) 50%, rgba(180,200,220,0.25) 100%)',
         }}
       />
+
+      {FIREFLY_POINTS.map((fly, i) => (
+        <motion.div
+          key={`firefly-${i}`}
+          className="absolute rounded-full pointer-events-none"
+          style={{
+            left: fly.left,
+            top: fly.top,
+            width: `${fly.size}px`,
+            height: `${fly.size}px`,
+            background: 'radial-gradient(circle, rgba(255,252,190,1) 0%, rgba(255,226,120,0.7) 45%, transparent 75%)',
+            boxShadow: '0 0 18px rgba(255,226,120,0.85), 0 0 34px rgba(118,219,177,0.28)',
+            zIndex: 12,
+          }}
+          animate={{
+            x: [0, i % 2 === 0 ? 34 : -28, 0],
+            y: [0, -18 - i * 2, 8, 0],
+            opacity: [0.2, 1, 0.35, 0.2],
+            scale: [0.6, 1.45, 0.8, 0.6],
+          }}
+          transition={{ duration: 5.5 + i * 0.4, repeat: Infinity, ease: 'easeInOut', delay: fly.delay }}
+        />
+      ))}
+
+      {/* Final color grade for a more cinematic illustrated finish */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: `
+            radial-gradient(ellipse at 50% 44%, transparent 0%, transparent 50%, rgba(24,48,72,0.16) 100%),
+            linear-gradient(180deg, rgba(255,249,226,0.1) 0%, transparent 42%, rgba(34,82,64,0.12) 100%)
+          `,
+          mixBlendMode: 'multiply',
+        }}
+      />
     </div>
   )
 }
@@ -1811,9 +2368,92 @@ function UnderwaterBackground() {
   return (
     <div className="fixed inset-0 overflow-hidden" style={{ zIndex: -10 }}>
       {/* Deep ocean gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-cyan-400 via-blue-600 to-blue-950" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#45d5e7] via-[#246fe2] to-[#071a5c]" />
+      <div
+        className="absolute inset-0"
+        style={{
+          background: `
+            radial-gradient(ellipse at 18% 8%, rgba(180,255,245,0.5) 0%, transparent 26%),
+            radial-gradient(ellipse at 72% 22%, rgba(102,200,255,0.32) 0%, transparent 34%),
+            radial-gradient(ellipse at 50% 80%, rgba(23,35,112,0.52) 0%, transparent 58%),
+            linear-gradient(180deg, rgba(255,255,255,0.14) 0%, transparent 20%, rgba(4,15,60,0.28) 100%)
+          `,
+        }}
+      />
+
+      {/* Surface shimmer and caustic lace */}
+      <svg className="absolute inset-x-0 top-0 h-[30%] w-full pointer-events-none" viewBox="0 0 1440 260" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="under-surface-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="rgba(255,255,255,0)" />
+            <stop offset="18%" stopColor="rgba(232,255,255,0.55)" />
+            <stop offset="42%" stopColor="rgba(150,238,255,0.28)" />
+            <stop offset="68%" stopColor="rgba(232,255,255,0.48)" />
+            <stop offset="100%" stopColor="rgba(255,255,255,0)" />
+          </linearGradient>
+          <filter id="under-caustic-blur">
+            <feGaussianBlur stdDeviation="0.7" />
+          </filter>
+        </defs>
+        <motion.path
+          d="M-80,46 C60,22 170,66 316,36 C482,2 588,60 752,30 C914,0 1040,54 1204,28 C1320,10 1420,28 1520,12"
+          fill="none"
+          stroke="url(#under-surface-glow)"
+          strokeWidth="10"
+          strokeLinecap="round"
+          filter="url(#under-caustic-blur)"
+          animate={{ d: [
+            'M-80,46 C60,22 170,66 316,36 C482,2 588,60 752,30 C914,0 1040,54 1204,28 C1320,10 1420,28 1520,12',
+            'M-80,36 C70,62 184,24 326,52 C492,86 610,22 760,52 C930,86 1038,20 1204,56 C1328,82 1420,36 1520,50',
+            'M-80,46 C60,22 170,66 316,36 C482,2 588,60 752,30 C914,0 1040,54 1204,28 C1320,10 1420,28 1520,12',
+          ], opacity: [0.45, 0.85, 0.45] }}
+          transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
+        />
+        <motion.path
+          d="M40,132 C178,98 306,150 454,112 C596,74 726,138 866,96 C1016,52 1136,112 1280,78 C1360,58 1420,72 1480,56"
+          fill="none"
+          stroke="rgba(220,255,255,0.2)"
+          strokeWidth="4"
+          strokeLinecap="round"
+          animate={{ opacity: [0.2, 0.5, 0.2], pathLength: [0.88, 1, 0.88] }}
+          transition={{ duration: 11, repeat: Infinity, ease: 'easeInOut', delay: 1.2 }}
+        />
+        <path d="M146,198 C218,176 282,210 354,188 C430,166 500,196 572,172" fill="none" stroke="rgba(255,255,255,0.12)" strokeWidth="3" strokeLinecap="round" />
+        <path d="M840,190 C926,158 994,204 1084,170 C1162,140 1224,178 1312,154" fill="none" stroke="rgba(255,255,255,0.12)" strokeWidth="3" strokeLinecap="round" />
+      </svg>
+
+      <motion.div
+        className="absolute inset-0 opacity-25 mix-blend-screen"
+        style={{
+          backgroundImage: `
+            repeating-radial-gradient(ellipse at 22% 18%, transparent 0 34px, rgba(222,255,255,0.22) 36px, transparent 42px),
+            repeating-radial-gradient(ellipse at 74% 8%, transparent 0 42px, rgba(160,245,255,0.18) 45px, transparent 52px)
+          `,
+          backgroundSize: '360px 220px, 420px 260px',
+          filter: 'blur(0.8px)',
+        }}
+        animate={{ x: ['-2%', '2%', '-2%'], y: ['0%', '1%', '0%'] }}
+        transition={{ duration: 14, repeat: Infinity, ease: 'easeInOut' }}
+      />
 
       {/* Light rays from surface */}
+      {UNDERWATER_RAY_BEAMS.map((ray, i) => (
+        <motion.div
+          key={`under-ray-${i}`}
+          className="absolute top-0 h-[72%] pointer-events-none"
+          style={{
+            left: ray.left,
+            width: `${ray.width}px`,
+            opacity: ray.opacity,
+            rotate: ray.rotate,
+            background: 'linear-gradient(180deg, rgba(255,255,255,0.72) 0%, rgba(155,235,255,0.28) 34%, transparent 100%)',
+            clipPath: 'polygon(34% 0%, 66% 0%, 96% 100%, 4% 100%)',
+            filter: 'blur(14px)',
+          }}
+          animate={{ opacity: [ray.opacity * 0.75, ray.opacity * 1.45, ray.opacity * 0.75], x: [-12, 12, -12] }}
+          transition={{ duration: 8 + i, repeat: Infinity, ease: 'easeInOut', delay: ray.delay }}
+        />
+      ))}
       <div className="absolute top-0 left-[10%] w-[300px] h-[60%] opacity-20"
         style={{
           background: 'linear-gradient(180deg, rgba(255,255,255,0.6) 0%, transparent 100%)',
@@ -1843,6 +2483,27 @@ function UnderwaterBackground() {
         }}
       />
 
+      {/* Distant reef shelves and blue silhouettes for depth */}
+      <svg className="absolute bottom-[10%] left-0 w-full h-[34%] pointer-events-none" viewBox="0 0 1440 330" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="distant-reef-blue" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stopColor="rgba(42,151,178,0.18)" />
+            <stop offset="55%" stopColor="rgba(20,83,129,0.26)" />
+            <stop offset="100%" stopColor="rgba(5,24,74,0.52)" />
+          </linearGradient>
+          <linearGradient id="near-reef-shadow" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stopColor="rgba(23,119,116,0.34)" />
+            <stop offset="100%" stopColor="rgba(2,23,62,0.7)" />
+          </linearGradient>
+        </defs>
+        <path d="M0,330 L0,188 C70,160 132,182 210,140 C304,90 382,152 470,102 C562,50 646,124 746,74 C844,26 928,92 1032,54 C1150,10 1252,84 1440,42 L1440,330 Z" fill="url(#distant-reef-blue)" />
+        <path d="M0,330 L0,244 C92,216 156,250 240,206 C328,160 416,220 514,178 C626,130 724,198 842,150 C966,98 1084,170 1198,128 C1306,88 1372,118 1440,96 L1440,330 Z" fill="url(#near-reef-shadow)" opacity="0.72" />
+        <path d="M106,194 C126,150 126,112 112,80 M132,194 C150,140 156,104 148,62 M120,142 C96,132 82,116 76,92 M142,122 C170,104 188,84 196,56" fill="none" stroke="rgba(55,181,154,0.34)" strokeWidth="8" strokeLinecap="round" />
+        <path d="M1130,132 C1150,86 1158,52 1148,24 M1168,134 C1190,86 1202,52 1196,18 M1158,88 C1138,74 1120,58 1112,34 M1186,86 C1212,66 1228,46 1238,20" fill="none" stroke="rgba(75,202,177,0.28)" strokeWidth="7" strokeLinecap="round" />
+        <ellipse cx="322" cy="252" rx="74" ry="24" fill="rgba(35,116,136,0.28)" />
+        <ellipse cx="1026" cy="240" rx="92" ry="30" fill="rgba(35,116,136,0.24)" />
+      </svg>
+
       {/* Sandy ocean floor */}
       <div className="absolute bottom-0 left-0 right-0 h-[15%]">
         <svg className="w-full h-full" viewBox="0 0 1440 150" preserveAspectRatio="none">
@@ -1859,6 +2520,12 @@ function UnderwaterBackground() {
           <path d="M400,75 Q500,65 600,78" fill="none" stroke="#9a8050" strokeWidth="2" opacity="0.3" />
           <path d="M700,82 Q800,72 900,85" fill="none" stroke="#9a8050" strokeWidth="2" opacity="0.3" />
           <path d="M1000,78 Q1100,68 1200,80" fill="none" stroke="#9a8050" strokeWidth="2" opacity="0.3" />
+          <path d="M0,58 C150,86 250,56 388,78 C520,100 642,54 786,76 C930,98 1068,58 1204,80 C1308,96 1370,74 1440,84" fill="none" stroke="rgba(255,241,184,0.28)" strokeWidth="3" opacity="0.8" />
+          <path d="M64,112 C220,92 330,118 482,98 C656,74 780,120 944,96 C1110,72 1248,106 1390,84" fill="none" stroke="rgba(112,86,48,0.18)" strokeWidth="2" />
+          <circle cx="180" cy="104" r="2.5" fill="#8e7452" opacity="0.32" />
+          <circle cx="520" cy="118" r="2" fill="#8e7452" opacity="0.28" />
+          <circle cx="912" cy="108" r="2.5" fill="#8e7452" opacity="0.3" />
+          <circle cx="1284" cy="118" r="2" fill="#8e7452" opacity="0.26" />
         </svg>
       </div>
 
@@ -1920,6 +2587,45 @@ function UnderwaterBackground() {
         <circle cx="215" cy="155" r="5" fill="#7ab8ff" />
         <circle cx="255" cy="145" r="5" fill="#7ab8ff" />
       </svg>
+
+      {/* Dense foreground coral gardens */}
+      {REEF_STACKS.map((reef, i) => (
+        <motion.div
+          key={`reef-stack-${i}`}
+          className="absolute pointer-events-none"
+          style={{ left: reef.left, bottom: reef.bottom, zIndex: 7, scale: reef.scale, transformOrigin: 'bottom center' }}
+          animate={{ rotate: [-0.7, 0.9, -0.7] }}
+          transition={{ duration: 6 + i, repeat: Infinity, ease: 'easeInOut', delay: reef.delay }}
+        >
+          <svg width="230" height="210" viewBox="0 0 230 210">
+            <defs>
+              <linearGradient id={`reef-main-${i}`} x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stopColor={reef.color} />
+                <stop offset="100%" stopColor="#6d3a92" />
+              </linearGradient>
+              <linearGradient id={`reef-accent-${i}`} x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor={reef.accent} />
+                <stop offset="100%" stopColor="#1e8f9a" />
+              </linearGradient>
+            </defs>
+            <ellipse cx="64" cy="176" rx="52" ry="28" fill={`url(#reef-main-${i})`} opacity="0.88" />
+            <path d="M28,168 Q46,150 64,168 Q82,150 100,168" fill="none" stroke="rgba(255,255,255,0.22)" strokeWidth="4" strokeLinecap="round" />
+            <path d="M36,182 Q52,164 68,182 Q84,164 100,182" fill="none" stroke="rgba(255,255,255,0.18)" strokeWidth="3" strokeLinecap="round" />
+            <path d="M128,208 L128,142 L104,98 M128,158 L154,104 M128,184 L98,144 M128,184 L168,138" fill="none" stroke={`url(#reef-accent-${i})`} strokeWidth="9" strokeLinecap="round" />
+            <circle cx="104" cy="98" r="9" fill={reef.accent} opacity="0.95" />
+            <circle cx="154" cy="104" r="8" fill={reef.accent} opacity="0.86" />
+            <circle cx="98" cy="144" r="7" fill={reef.accent} opacity="0.8" />
+            <circle cx="168" cy="138" r="8" fill={reef.accent} opacity="0.82" />
+            <path d="M182,206 C180,166 184,130 196,94 M196,206 C202,166 202,132 214,102 M172,206 C158,168 162,140 152,110" fill="none" stroke="#5be0c2" strokeWidth="5" strokeLinecap="round" opacity="0.76" />
+            <ellipse cx="190" cy="118" rx="22" ry="7" fill="#74efd7" opacity="0.5" transform="rotate(-28 190 118)" />
+            <ellipse cx="158" cy="132" rx="18" ry="6" fill="#74efd7" opacity="0.45" transform="rotate(24 158 132)" />
+            <ellipse cx="212" cy="146" rx="20" ry="7" fill="#74efd7" opacity="0.46" transform="rotate(-22 212 146)" />
+            <circle cx="52" cy="146" r="5" fill="#fff0a6" opacity="0.8" />
+            <circle cx="76" cy="138" r="4" fill="#bff7ff" opacity="0.72" />
+            <circle cx="112" cy="118" r="4" fill="#fff0a6" opacity="0.7" />
+          </svg>
+        </motion.div>
+      ))}
 
       {/* Kelp forest - left */}
       <motion.div
@@ -2092,6 +2798,38 @@ function UnderwaterBackground() {
         </svg>
       </motion.div>
 
+      {/* Distant schools of tiny fish */}
+      {MINI_FISH_SCHOOLS.map((school, i) => (
+        <motion.div
+          key={`mini-school-${i}`}
+          className="absolute pointer-events-none opacity-70"
+          style={{ top: school.top }}
+          animate={{
+            x: school.direction === 'right'
+              ? [-180, typeof window !== 'undefined' ? window.innerWidth + 180 : 1700]
+              : [typeof window !== 'undefined' ? window.innerWidth + 180 : 1700, -180],
+            y: [0, i % 2 === 0 ? -18 : 16, 0],
+          }}
+          transition={{ duration: school.duration, repeat: Infinity, ease: 'linear', delay: school.delay }}
+        >
+          <svg width="180" height="90" viewBox="0 0 180 90">
+            {[...Array(13)].map((_, fish) => {
+              const row = fish % 4
+              const x = 18 + fish * 11 + (row % 2) * 8
+              const y = 16 + row * 15 + Math.floor(fish / 4) * 4
+              const flip = school.direction === 'right' ? 1 : -1
+              return (
+                <g key={fish} transform={`translate(${x} ${y}) scale(${flip} 1)`}>
+                  <ellipse cx="0" cy="0" rx="7" ry="4" fill={school.color} opacity={0.86 - row * 0.08} />
+                  <polygon points="-7,0 -14,-5 -14,5" fill={school.color} opacity={0.76} />
+                  <circle cx="4" cy="-1" r="0.8" fill="#083051" opacity="0.7" />
+                </g>
+              )
+            })}
+          </svg>
+        </motion.div>
+      ))}
+
       {/* Sea turtle */}
       <motion.div
         className="absolute top-[30%]"
@@ -2196,6 +2934,42 @@ function UnderwaterBackground() {
       </motion.div>
 
       {/* Bubbles */}
+      {BUBBLE_COLUMNS.map((column, i) => (
+        <div
+          key={`bubble-column-${i}`}
+          className="absolute pointer-events-none"
+          style={{ left: column.left, bottom: column.bottom, zIndex: 8 }}
+        >
+          {[...Array(column.count)].map((_, bubble) => (
+            <motion.div
+              key={bubble}
+              className="absolute rounded-full"
+              style={{
+                width: `${5 + (bubble % 4) * 4}px`,
+                height: `${5 + (bubble % 4) * 4}px`,
+                left: `${(bubble % 3) * 12}px`,
+                bottom: `${bubble * 18}px`,
+                background: 'radial-gradient(circle at 32% 28%, rgba(255,255,255,0.92), rgba(190,245,255,0.22) 58%, rgba(255,255,255,0.08) 100%)',
+                border: '1px solid rgba(220,255,255,0.35)',
+                boxShadow: '0 0 10px rgba(180,245,255,0.25)',
+              }}
+              animate={{
+                y: [0, -90 - bubble * 12],
+                x: [0, bubble % 2 === 0 ? 14 : -14, 0],
+                opacity: [0, 0.72, 0],
+                scale: [0.7, 1.1, 1.35],
+              }}
+              transition={{
+                duration: 5.5 + bubble * 0.45,
+                repeat: Infinity,
+                ease: 'easeOut',
+                delay: column.delay + bubble * 0.35,
+              }}
+            />
+          ))}
+        </div>
+      ))}
+
       {[...Array(20)].map((_, i) => (
         <motion.div
           key={`bubble-${i}`}
@@ -2249,30 +3023,66 @@ function UnderwaterBackground() {
         <path d="M7,14 Q12,8 18,14" fill="none" stroke="#dcc4a4" strokeWidth="1" />
       </svg>
 
-      {/* Underwater particles/debris */}
-      {[...Array(15)].map((_, i) => (
+      {BIOLUMEN_DOTS.map((dot, i) => (
         <motion.div
-          key={`particle-${i}`}
-          className="absolute rounded-full bg-white/20"
+          key={`biolumen-${i}`}
+          className="absolute rounded-full pointer-events-none"
           style={{
-            width: `${2 + (i % 3)}px`,
-            height: `${2 + (i % 3)}px`,
-            left: `${(i * 6.5)}%`,
-            top: `${20 + (i % 6) * 12}%`,
+            left: dot.left,
+            top: dot.top,
+            width: '5px',
+            height: '5px',
+            background: 'radial-gradient(circle, rgba(184,255,237,1) 0%, rgba(86,236,215,0.5) 48%, transparent 78%)',
+            boxShadow: '0 0 18px rgba(110,255,224,0.75), 0 0 34px rgba(73,177,255,0.28)',
           }}
           animate={{
-            y: [0, 50, 0],
-            x: [0, (i % 2 === 0 ? 20 : -20), 0],
-            opacity: [0.3, 0.6, 0.3],
+            opacity: [0.12, 0.95, 0.18],
+            scale: [0.55, 1.7, 0.7],
+            y: [0, -10, 0],
+          }}
+          transition={{ duration: 4.6, repeat: Infinity, ease: 'easeInOut', delay: dot.delay }}
+        />
+      ))}
+
+      {/* Underwater particles/debris */}
+      {[...Array(32)].map((_, i) => (
+        <motion.div
+          key={`particle-${i}`}
+          className="absolute rounded-full"
+          style={{
+            width: `${1.5 + (i % 4) * 0.8}px`,
+            height: `${1.5 + (i % 4) * 0.8}px`,
+            background: i % 5 === 0 ? 'rgba(177,255,231,0.4)' : 'rgba(255,255,255,0.24)',
+            boxShadow: i % 5 === 0 ? '0 0 10px rgba(177,255,231,0.5)' : 'none',
+            left: `${(i * 6.5)}%`,
+            top: `${12 + (i % 8) * 10}%`,
+          }}
+          animate={{
+            y: [0, 42 + (i % 5) * 8, 0],
+            x: [0, (i % 2 === 0 ? 24 : -24), 0],
+            opacity: [0.16, 0.72, 0.16],
+            scale: [0.8, 1.25, 0.8],
           }}
           transition={{
-            duration: 6 + (i % 4),
+            duration: 6 + (i % 6),
             repeat: Infinity,
             ease: 'easeInOut',
-            delay: i * 0.4,
+            delay: i * 0.28,
           }}
         />
       ))}
+
+      {/* Deep water color grade keeps the cards readable while adding immersion */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: `
+            radial-gradient(ellipse at 50% 30%, transparent 0%, transparent 46%, rgba(4,19,74,0.2) 100%),
+            linear-gradient(180deg, rgba(160,255,246,0.08) 0%, transparent 35%, rgba(2,10,48,0.24) 100%)
+          `,
+          mixBlendMode: 'multiply',
+        }}
+      />
     </div>
   )
 }
@@ -2434,39 +3244,35 @@ export default function App() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-6 py-20">
+      <section className="relative min-h-screen flex items-center justify-center px-6 py-16 lg:py-24">
         <div className="max-w-6xl mx-auto w-full">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
             {/* Left: Text content */}
-            <div className="order-2 lg:order-1 text-center lg:text-left">
+            <div className="order-2 lg:order-1 text-center lg:text-left lg:self-center">
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-                className="relative p-8 md:p-10 rounded-3xl bg-white/20 border border-white/30 backdrop-blur-md shadow-2xl shadow-black/5 overflow-hidden"
+                className="relative p-10 md:p-12 rounded-[2rem] bg-white/12 border border-white/25 backdrop-blur-2xl shadow-[0_20px_60px_rgba(0,0,0,0.14)] overflow-hidden"
               >
-                {/* Subtle gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-transparent to-white/10 pointer-events-none" />
+                {/* Very subtle inner glow — keeps glass feel without opacity */}
+                <div className="absolute inset-0 bg-gradient-to-br from-white/20 via-white/5 to-transparent pointer-events-none" />
 
-                {/* Top decorative line */}
-                <div className="absolute top-0 left-8 right-8 h-px bg-gradient-to-r from-transparent via-emerald-400/40 to-transparent" />
-
-                {/* Corner accents */}
-                <div className="absolute top-0 left-0 w-24 h-24 bg-gradient-to-br from-emerald-400/10 to-transparent rounded-tl-3xl" />
-                <div className="absolute bottom-0 right-0 w-32 h-32 bg-gradient-to-tl from-cyan-400/10 to-transparent rounded-br-3xl" />
+                {/* Hairline top accent */}
+                <div className="absolute top-0 left-12 right-12 h-px bg-gradient-to-r from-transparent via-white/60 to-transparent" />
 
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.2 }}
-                  className="text-gray-600 text-lg mb-4 font-light tracking-wide"
+                  className="text-gray-600/90 text-lg mb-2 font-normal tracking-wide"
                 >
-                  hey, i'm
+                  hey, i'm 👋
                 </motion.p>
 
-                <h1 className="mb-6">
+                <h1 className="mb-5">
                   <AnimatedText delay={0.3}>
-                    <span className="text-5xl md:text-6xl font-bold tracking-tight text-gray-900">
+                    <span className="text-7xl md:text-8xl font-black tracking-tight leading-none" style={{ color: '#0d1f3c' }}>
                       kevin lee
                     </span>
                   </AnimatedText>
@@ -2476,7 +3282,7 @@ export default function App() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.5 }}
-                  className="text-xl md:text-2xl font-light mb-10 text-gray-700"
+                  className="text-lg md:text-xl font-light mb-10 text-gray-600/85"
                 >
                   i build stuff that works.
                 </motion.p>
@@ -2490,14 +3296,14 @@ export default function App() {
                 >
                   <MagneticButton
                     href="mailto:kevinlee1@berkeley.edu"
-                    className="group relative inline-flex items-center gap-2 px-8 py-4 rounded-full overflow-hidden shadow-lg"
+                    className="group relative inline-flex items-center gap-2 px-7 py-3.5 rounded-full overflow-hidden shadow-lg shadow-teal-500/25"
                   >
-                    <span className="absolute inset-0 bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500" />
-                    <span className="absolute inset-0 bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    <span className="relative flex items-center gap-2 text-white font-semibold">
+                    <span className="absolute inset-0 bg-[#2dada8]" />
+                    <span className="absolute inset-0 bg-[#259491] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <span className="relative flex items-center gap-2 text-white font-semibold text-sm tracking-wide">
                       <FiMail className="w-4 h-4" />
                       get in touch
-                      <FiArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      <FiArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                     </span>
                   </MagneticButton>
 
@@ -2505,7 +3311,7 @@ export default function App() {
                     href="https://linkedin.com/in/kevinlee33"
                     target="_blank"
                     rel="noreferrer"
-                    className="group inline-flex items-center gap-2 px-6 py-4 rounded-full bg-white/80 backdrop-blur-sm border border-white/60 hover:bg-white/95 hover:border-white/90 transition-all duration-300 shadow-md text-gray-700 hover:text-gray-900"
+                    className="group inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-white/90 border border-white/80 hover:bg-white transition-all duration-300 shadow-md text-gray-700 hover:text-gray-900 font-medium text-sm"
                   >
                     <FiLinkedin className="w-4 h-4" />
                     linkedin
@@ -2522,16 +3328,19 @@ export default function App() {
               className="order-1 lg:order-2 flex justify-center"
             >
               <div className="relative group" style={{ perspective: '1000px' }}>
+                {/* Soft ambient halo */}
+                <div className="absolute inset-[-16px] rounded-[2.5rem] bg-gradient-to-b from-white/25 via-white/10 to-white/5 blur-2xl pointer-events-none" />
+
                 {/* Flip card container */}
                 <div
-                  className="relative w-72 h-96 md:w-80 md:h-[440px] transition-transform duration-700 ease-in-out group-hover:[transform:rotateY(180deg)]"
+                  className="relative w-[300px] h-[420px] md:w-[340px] md:h-[520px] transition-transform duration-700 ease-in-out group-hover:[transform:rotateY(180deg)]"
                   style={{
                     transformStyle: 'preserve-3d',
                   }}
                 >
                   {/* Front - Portrait */}
                   <div
-                    className="absolute inset-0 rounded-3xl overflow-hidden border-2 border-white/60 shadow-2xl"
+                    className="absolute inset-0 rounded-[1.75rem] overflow-hidden border-[3px] border-white/85 shadow-[0_28px_56px_rgba(0,0,0,0.30)]"
                     style={{
                       backfaceVisibility: 'hidden',
                     }}
@@ -2542,12 +3351,12 @@ export default function App() {
                       className="w-full h-full object-cover"
                     />
                     {/* Gradient overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
                   </div>
 
                   {/* Back - OpenAI */}
                   <div
-                    className="absolute inset-0 rounded-3xl overflow-hidden border-2 border-white/60 shadow-2xl bg-gradient-to-br from-gray-900 via-gray-800 to-black flex flex-col items-center justify-center p-8"
+                    className="absolute inset-0 rounded-[1.75rem] overflow-hidden border-[3px] border-white/85 shadow-[0_28px_56px_rgba(0,0,0,0.30)] bg-gradient-to-br from-gray-900 via-gray-800 to-black flex flex-col items-center justify-center p-8"
                     style={{
                       backfaceVisibility: 'hidden',
                       transform: 'rotateY(180deg)',
@@ -2583,42 +3392,27 @@ export default function App() {
         <motion.div
           initial={{ opacity: 1, y: 0 }}
           animate={{ opacity: Math.max(0, 1 - scrollY / 100), y: 0 }}
-          className="fixed bottom-6 left-0 right-0 flex justify-center z-10"
+          className="fixed bottom-6 left-0 right-0 hidden md:flex justify-center z-10"
           style={{ pointerEvents: scrollY > 50 ? 'none' : 'auto' }}
         >
           <motion.div
             animate={{ y: [0, 6, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-            className="flex flex-col items-center gap-2"
+            transition={{ duration: 2.4, repeat: Infinity, ease: 'easeInOut' }}
+            className="flex flex-col items-center gap-3"
           >
-            {/* Text with background for visibility */}
-            <div className="px-7 py-3 rounded-full bg-white/80 backdrop-blur-sm border border-white/60 shadow-xl">
-              <span className="text-lg font-bold text-gray-800">more about me!</span>
+            {/* Pill button */}
+            <div className="flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-white/90 backdrop-blur-md border border-white/70 shadow-[0_8px_32px_rgba(0,0,0,0.14)]">
+              <span className="text-base">🌿</span>
+              <span className="text-base font-semibold text-gray-800 tracking-wide">more about me!</span>
             </div>
 
-            {/* Animated arrows */}
-            <div className="flex flex-col items-center">
-              <motion.div
-                animate={{ y: [0, 5, 0], opacity: [1, 0.4, 1] }}
-                transition={{ duration: 1.2, repeat: Infinity, ease: 'easeInOut' }}
-              >
-                <FiChevronDown className="w-8 h-8 text-gray-700" />
-              </motion.div>
-              <motion.div
-                animate={{ y: [0, 5, 0], opacity: [0.7, 0.2, 0.7] }}
-                transition={{ duration: 1.2, repeat: Infinity, ease: 'easeInOut', delay: 0.1 }}
-                className="-mt-3"
-              >
-                <FiChevronDown className="w-8 h-8 text-gray-700" />
-              </motion.div>
-              <motion.div
-                animate={{ y: [0, 5, 0], opacity: [0.4, 0.1, 0.4] }}
-                transition={{ duration: 1.2, repeat: Infinity, ease: 'easeInOut', delay: 0.2 }}
-                className="-mt-3"
-              >
-                <FiChevronDown className="w-8 h-8 text-gray-700" />
-              </motion.div>
-            </div>
+            {/* Single animated chevron */}
+            <motion.div
+              animate={{ y: [0, 6, 0], opacity: [0.8, 0.35, 0.8] }}
+              transition={{ duration: 1.4, repeat: Infinity, ease: 'easeInOut' }}
+            >
+              <FiChevronDown className="w-6 h-6 text-gray-600" />
+            </motion.div>
           </motion.div>
         </motion.div>
       </section>
